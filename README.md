@@ -1,4 +1,30 @@
-# React + TypeScript + Vite
+# Reviews app
+
+
+## Project structure
+
+```
+app/
+├─ .devcontainer/          # devcontainer configuration
+├─ public/                 # static files served as-is (favicon, robots, etc.)
+├─ src/
+│  ├─ assets/              # images/fonts imported into code
+│  ├─ components/          # small shared components
+│  ├─ pages/               # route-level pages (if using react-router)
+│  ├─ hooks/               # reusable hooks (useX)
+│  ├─ services/            # API clients / wrappers
+│  ├─ types/               # global/shared TS types
+│  ├─ utils/               # small pure helpers
+│  ├─ App.tsx
+│  └─ main.tsx
+├─ ...
+├─ package.json
+├─ tsconfig.json
+└─ vite.config.ts
+```
+
+
+## Project configuration
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
