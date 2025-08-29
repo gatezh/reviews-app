@@ -1,5 +1,28 @@
 # Reviews app
 
+## Development
+
+### Using devcontainer (recommended)
+
+> **✅ Prerequisites**:
+>
+> - VS Code
+> - Docker
+
+
+
+1. Clone the repo
+
+2. Open the project in VS Code
+
+3. When prompted select `Reopen in Container`
+
+   Or using command palette `CMD + SHIFT + P` > `Dev Containers: Reopen in Container`
+4. Install dependencies `npm i`
+5. Start dev server `npm run dev`
+6. When prompted select `Open in Browser` (or `Preview in Editor`)
+
+
 
 ## Project structure
 
@@ -24,6 +47,7 @@ app/
 ```
 
 
+
 ## Project configuration
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -32,6 +56,8 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
 
 ## Expanding the ESLint configuration
 
