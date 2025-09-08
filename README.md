@@ -9,14 +9,9 @@
 > - VS Code
 > - Docker
 
-
-
 1. Clone the repo
-
 2. Open the project in VS Code
-
 3. When prompted select `Reopen in Container`
-
    Or using command palette `CMD + SHIFT + P` > `Dev Containers: Reopen in Container`
 4. Install dependencies `npm i`
 5. Start dev server `npm run dev`
