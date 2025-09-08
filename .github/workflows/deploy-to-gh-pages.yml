@@ -40,7 +40,9 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          # ℹ️ Same version is used in devcontainer
+          # ⚠️ Remember to update .devcontainer/Dockerfile if changing it here
+          node-version: 22.18.0
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
