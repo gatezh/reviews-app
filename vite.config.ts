@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 // GitHub Actions
 // GITHUB_REPOSITORY is in format "owner/repo"
@@ -10,5 +11,8 @@ const isGithubActions = Boolean(process.env.GITHUB_ACTIONS);
 // https://vite.dev/config/
 export default defineConfig({
   base: isGithubActions && repoName ? `/${repoName}/` : "/",
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
 });
