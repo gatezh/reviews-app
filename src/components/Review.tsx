@@ -16,7 +16,7 @@ export default function Review(props: Review): React.ReactElement {
         </div>
       </div>
       <div className="flex justify-between">
-        <span>{props.rating}</span>
+        <span>{'⭐️'.repeat(props.rating)}</span>
         <span className="italic">{props.author}</span>
       </div>
       <p>{props.body}</p>
