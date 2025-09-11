@@ -5,7 +5,7 @@ export default function Review(props: Review): React.ReactElement {
   return (
     <div
       key={props.id}
-      className="m-2 flex flex-col rounded-lg border border-black p-3"
+      className="m-2 flex flex-col rounded-lg border border-black p-3 bg-gray-100"
     >
       <div className="flex justify-between">
         <h3 className="text-xl font-bold">{props.title}</h3>
