@@ -1,4 +1,4 @@
-export default function Footer(): React.ReactElement {
+const Footer = (): React.ReactElement => {
   const year = new Date().getFullYear();
 
   return (
@@ -6,4 +6,6 @@ export default function Footer(): React.ReactElement {
       Copyright {year} All right reserved
     </footer>
   );
-}
+};
+
+export default Footer;
