@@ -1,11 +1,11 @@
 import type React from "react";
-import type { Review } from "../types/review";
+import type { ReviewProps } from "../types/review";
 
-export default function Review(props: Review): React.ReactElement {
+const Review = (props: ReviewProps): React.ReactElement => {
   return (
     <div
       key={props.id}
-      className="m-2 flex flex-col rounded-lg border border-black p-3 bg-gray-100"
+      className="m-2 flex flex-col rounded-lg border border-black bg-gray-100 p-3"
     >
       <div className="flex justify-between">
         <h3 className="text-xl font-bold">{props.title}</h3>
@@ -16,10 +16,12 @@ export default function Review(props: Review): React.ReactElement {
         </div>
       </div>
       <div className="flex justify-between">
-        <span>{'⭐️'.repeat(props.rating)}</span>
+        <span>{"⭐️".repeat(props.rating)}</span>
         <span className="italic">{props.author}</span>
       </div>
       <p>{props.body}</p>
     </div>
   );
-}
+};
+
+export default Review;
