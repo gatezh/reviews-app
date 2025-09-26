@@ -1,6 +1,6 @@
 import type React from "react";
 
-import Review from "./Review";
+import Review from "../components/Review";
 import { reviews } from "../reviews";
 
 export default function Main(): React.ReactElement {
