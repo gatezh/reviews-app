@@ -1,6 +1,6 @@
-import type { Review } from "./types/review";
+import type { ReviewProps } from "./types/review";
 
-export const reviews: Review[] = [
+export const reviews: ReviewProps[] = [
   {
     id: 1,
     author: "Timothy King",
