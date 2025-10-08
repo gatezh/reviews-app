@@ -12,6 +12,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* START Fix for GitHub Pages deployment */}
+        <Route path="/reviews-app/" element={<Home />} />
+        {/* END Fix for GitHub Pages deployment */}
       </Routes>
       <Footer />
     </BrowserRouter>
