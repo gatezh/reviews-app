@@ -5,7 +5,7 @@ import { reviews } from "../reviews";
 
 const Home = (): React.ReactElement => {
   const ReviewsList: React.ReactElement[] = reviews.map((review) => {
-    return <Review {...review} />;
+    return <Review key={review.id} {...review} />;
   });
 
   return <main>{ReviewsList}</main>;

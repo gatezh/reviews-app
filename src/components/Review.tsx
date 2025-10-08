@@ -3,10 +3,7 @@ import type { ReviewProps } from "../types/review";
 
 const Review = (props: ReviewProps): React.ReactElement => {
   return (
-    <div
-      key={props.id}
-      className="m-2 flex flex-col rounded-lg border border-black bg-gray-100 p-3"
-    >
+    <div className="m-2 flex flex-col rounded-lg border border-black bg-gray-100 p-3">
       <div className="flex justify-between">
         <h3 className="text-xl font-bold">{props.title}</h3>
         <div>
