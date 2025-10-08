@@ -1,3 +1,5 @@
+// import styles from "./style.css";
+
 const Header = (): React.ReactElement => {
   const styles = {
     padding: "0 1rem",
