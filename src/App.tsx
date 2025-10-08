@@ -6,15 +6,18 @@ import Footer from "./components/Footer";
 
 import "./App.css";
 
+// Vite exposes the configured base at import.meta.env.BASE_URL.
+// Normalize it: use `undefined` for dev (so BrowserRouter behaves normally),
+// otherwise strip the trailing slash for a clean basename like "/reviews-app".
+const rawBase = import.meta.env.BASE_URL || "/";
+const basename = rawBase === "/" ? undefined : rawBase.replace(/\/$/, "");
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* START Fix for GitHub Pages deployment */}
-        <Route path="/reviews-app/" element={<Home />} />
-        {/* END Fix for GitHub Pages deployment */}
       </Routes>
       <Footer />
     </BrowserRouter>
