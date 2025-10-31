@@ -1,7 +1,7 @@
 import { memo } from "react";
 import type React from "react";
 
-import Review from "./Review";
+import Review from "../components/Review";
 import type { ReviewProps } from "../types/review";
 
 type ReviewsListProps = {
