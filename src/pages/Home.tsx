@@ -1,14 +1,14 @@
 import type React from "react";
 
-import Review from "../components/Review";
+import ReviewsList from "../components/ReviewsList";
 import { reviews } from "../reviews";
 
-const Home = (): React.ReactElement => {
-  const ReviewsList: React.ReactElement[] = reviews.map((review) => {
-    return <Review key={review.id} {...review} />;
-  });
-
-  return <main>{ReviewsList}</main>;
+const Home: React.FC = () => {
+  return (
+    <main>
+      <ReviewsList reviews={reviews} />
+    </main>
+  );
 };
 
 export default Home;
