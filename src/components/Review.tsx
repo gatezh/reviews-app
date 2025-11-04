@@ -1,7 +1,7 @@
 import type React from "react";
 import type { ReviewProps } from "../types/review";
 
-const Review = (props: ReviewProps): React.ReactElement => {
+const Review: React.FC<ReviewProps> = (props) => {
   const date = new Date(props.date);
   const dateString = date.toLocaleDateString("en-US");
   const timeString = date.toLocaleTimeString("it-IT");
